@@ -1,0 +1,124 @@
+body {
+    background-color: black;
+}
+.wd-border-color {  border-color: rgb(47, 51, 54); }
+
+.wd-title {
+    margin-left: 16px;
+    margin-top: 12px;
+    color: white;
+    font-size: 20px;
+}
+
+.wd-handle {
+    margin-left: 16px;
+    color: lightgray;
+    font-size: 13px;
+    padding-bottom: 12px;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
+}
+
+.wd-book-mark {
+    margin-left: 16px;
+    margin-top: 12px;
+    margin-bottom: 50px;
+}
+
+.wd-avatar {
+    float: left;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.wd-second-part { 
+    float: left;
+    position: relative;
+    left: 12px;
+    right: 16px;
+}
+
+.wd-float-done {
+    clear: both;
+}
+
+.wd-author {
+    float: left;
+    color: white;
+    font-size: 15px;
+}
+.wd-author-handle {  
+    float: left;
+    margin-left: 5px;
+    color: lightgray;
+    font-size: 15px;
+}
+
+.wd-paragraph {
+    clear: both;
+    color: white;
+    font-size: 15px;
+    width: 504px;
+}
+
+.wd-relative {
+    position: relative;
+}
+
+.wd-big-pic { 
+    margin-top: 12px;
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+}
+
+.wd-pad {
+    padding: 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    width: 480px;
+}
+
+.wd-pad-2 {
+    padding: 12px;
+    width: 504px;
+}
+
+.wd-second-title {
+    color: white;
+    font-size: 15px;
+}
+
+.wd-second-p { 
+    color: lightgray;
+    font-size: 15px;
+}
+
+.wd-icon-number { 
+    width: 25%;
+    float: left;
+}
+
+.wd-icon { 
+    float: left;
+    color: lightgray;
+}
+
+.wd-number {
+    margin-left: 12px;
+    float: left;
+    color: lightgray;
+}
+
+.wd-liked-number {
+    margin-left: 12px;
+    float: left;
+    color: red;
+}
