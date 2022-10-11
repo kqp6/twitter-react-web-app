@@ -1,83 +1,22 @@
-body {
-    background-color: black;
+.float-r {
+    float: right;
 }
 
-::placeholder {
+.title-abs{
+    position: relative;
+    bottom: 480px;
+    left: 12px;
     color: white;
 }
 
-.wd-float-done {
+.grey-text {
+    color: grey;
+}
+
+.no-float {
+    clear: left;
+}
+
+.no-right {
     clear: both;
-}
-
-.wd-margin { 
-    margin-left: 16px;
-}
-
-.wd-top-part {
-    border-bottom-style: solid;
-    border-bottom-color: rgb(47, 51, 54);
-    border-bottom-width: 1px;
-}
-.wd-search-bar { 
-    float: left;
-    background-color: gray;
-    color: white;
-    height: 35px;
-    width: 85%;
-    margin: 16px;
-    border-radius: 45px;
-    border-color: rgb(47, 51, 54);
-}
-
-.wd-gear-icon {
-    float: right;
-    margin-top: 16px;
-    margin-right: 12px;
-}
-
-
-.wd-nav-highlighted { 
-    float: left;
-    color: rgb(29, 161, 242);
-    font-size: 15px;
-    padding: 16px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(29, 161, 242);
-    text-decoration: none;
-}
-.wd-nav-links { 
-    float: left;
-    color: rgb(110, 118, 125);
-    font-size: 15px;
-    padding: 16px;
-    text-decoration: none;
-}
-
-.wd-posts{
-    margin: 16px;
-}
-.wd-post-font{
-    padding: 2px;
-    font-size: 13px;
-    color: rgb(110, 118, 125);
-}
-.wd-name-font{ 
-    padding: 2px;
-    font-size: 16px;
-    color: white;
-}
-
-.wd-image-posts { 
-    padding: 16px;
-    border-top-style: solid;
-    border-top-color: rgb(47, 51, 54);
-    border-top-width: 1px;
-}
-.wd-img-text {
-    float: left;
-}
-.wd-post-img { 
-    float: right;
-    border-radius: 15px;
 }
