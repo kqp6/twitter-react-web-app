@@ -46,12 +46,12 @@ const NavigationSidebar = (
     <a href="more.html" className={`list-group-item
                    ${active === 'more'?'active':''}`}>
       <i className="float-start bi bi-three-dots"></i>
-      <div class="float-start ms-2 text-justify d-xl-block d-xxl-block d-lg-none d-md-none d-sm-none d-none">More</div>
+      <div className="float-start ms-2 text-justify d-xl-block d-xxl-block d-lg-none d-md-none d-sm-none d-none">More</div>
     </a>
   </div>
-  <div class="d-grid mt-2">
+  <div className="d-grid mt-2">
     <a href="tweet.html"
-        class="btn btn-primary btn-block rounded-pill">
+        className="btn btn-primary btn-block rounded-pill">
         Tweet</a>
   </div>
   </>
