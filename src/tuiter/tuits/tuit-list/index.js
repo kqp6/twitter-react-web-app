@@ -8,8 +8,7 @@ const TuitList = () => {
     const dispatch = useDispatch();
     useEffect(() => {
       dispatch(findTuitsThunk())
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    }, [dispatch]);
     console.log(tuits);
     return(
         <ul className="list-group">
