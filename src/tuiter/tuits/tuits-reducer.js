@@ -65,9 +65,6 @@ const tuitsSlice = createSlice({
       ...payload
     }
     }
-
-
-
  },
 
  reducers: {
