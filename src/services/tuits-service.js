@@ -18,7 +18,7 @@ export const deleteTuit = async (tid) => {
   return response.data
 }
 export const updateTuit = async (tuit) => {
-    await axios
+    const response = await axios
     .put(`${TUITS_API}/${tuit._id}`, tuit);
     return tuit;
 }
