@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
-import tuits from './tuits.json';
+// import tuits from './tuits.json';
 import {updateTuitThunk, createTuitThunk, deleteTuitThunk, findTuitsThunk}
   from "../../services/tuits-thunks";
+
 
 const initialState = {
     tuits: [],
@@ -24,12 +25,12 @@ const templateTuit = {
 "retuits": 0,
 "likes": 0,
 }
-   
 
 const tuitsSlice = createSlice({
  name: 'tuits',
  initialState,
  extraReducers: {
+  
    [findTuitsThunk.pending]:
       (state) => {
          state.loading = true

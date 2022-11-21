@@ -4,6 +4,7 @@ import {useDispatch} from "react-redux";
 import {deleteTuitThunk} from "../../../services/tuits-thunks";
 
 const TuitItem = (
+    /* 
     {
         tuit = { "_id": 1, 
         "topic": "Web Development", 
@@ -19,6 +20,7 @@ const TuitItem = (
         "tuit": "React will keep working on the client just like it does today, but this will be a new lever available to everyone to build faster apps by reducing bytes sent and streaming data as soon as it's ready."
         }
     }
+    */{tuit}
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {

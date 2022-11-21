@@ -1,6 +1,7 @@
 import axios from 'axios';
 const API_BASE = process.env.REACT_APP_API_BASE;
 const TUITS_API = `${API_BASE}/tuits`;
+//const TUITS_API = 'https://tuiter-node-server-app-kun.herokuapp.com/api/tuits';
 
 export const createTuit = async (tuit) => {
     const response = await axios.post(TUITS_API, tuit)
@@ -11,13 +12,13 @@ export const findTuits  = async ()     => {
     const tuits = response.data;
     return tuits;
 }
-export const deleteTuit = async (tuit) => {
+export const deleteTuit = async (tid) => {
     const response = await axios
-    .delete(`${TUITS_API}/${tuit}`)
+    .delete(`${TUITS_API}/${tid}`)
   return response.data
 }
 export const updateTuit = async (tuit) => {
     const response = await axios
     .put(`${TUITS_API}/${tuit._id}`, tuit);
-    return response;
+    return tuit;
 }
