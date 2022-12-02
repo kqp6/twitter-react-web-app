@@ -1,11 +1,11 @@
 import React from "react";
-//import ConditionalLiked from "./liked";
+import ConditionalLiked from "./liked";
 import {updateTuitThunk} from "../../../services/tuits-thunks";
 import {useDispatch} from "react-redux";
 
 
 const TuitStats = ({tuit}) => {
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
     return(
         <div className="row">
             <div className="col-3">
@@ -15,10 +15,7 @@ const TuitStats = ({tuit}) => {
                 <i className="bi bi-arrow-repeat"></i> {tuit.retuits}
             </div>
             <div className="col-3">
-                <i onClick={() => dispatch(updateTuitThunk({
-                    ...tuit,
-                    likes: tuit.likes + 1
-                }))} className="bi bi-heart-fill me-2 text-danger"></i> {tuit.likes}
+                <ConditionalLiked tuit = {tuit}/> {tuit.likes}
             </div>
             <div className="col-3">
                 <i className="bi bi-share"></i>
@@ -28,3 +25,10 @@ const TuitStats = ({tuit}) => {
 }
 
 export default TuitStats;
+
+/*
+<i onClick={() => dispatch(updateTuitThunk({
+    ...tuit,
+    likes: tuit.likes + 1
+}))} className="bi bi-heart-fill me-2 text-danger"></i>
+*/
